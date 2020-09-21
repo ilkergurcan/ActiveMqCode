@@ -24,7 +24,7 @@ public class Recieve{
             MessageConsumer consumer = session.createConsumer(destination);
 
         while(true) {
-            //her mesajı yazdırdıktan sonra yeni bir mesaj gelmesini bekliyor
+            //her mesajı yazdırdıktan sonra yeni bir mesaj gelmesini bekliyor.
             Message message = consumer.receive();
 
             if (message instanceof TextMessage) {

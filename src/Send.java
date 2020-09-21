@@ -34,7 +34,7 @@ public class Send {
 
             Session session = connection.createSession(false, Session.AUTO_ACKNOWLEDGE);
 
-            //hangi queue'ya gideceğini belirliyor
+            //hangi queue'ya gideceğini belirliyor.
             Destination destination = session.createQueue(queueName);
 
             MessageProducer producer = session.createProducer(destination);
